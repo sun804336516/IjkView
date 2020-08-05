@@ -1,0 +1,82 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: 'config.gradle'
+
+buildscript {
+    repositories {
+//        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        google()
+        jcenter()
+        mavenCentral()
+
+        maven { url "https://maven.google.com" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/zouyuhan/maven' }
+        maven { url 'http://4thline.org/m2' }
+//        maven { url "https://maven.google.com" }
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+        //添加 Sensors Analytics android-gradle-plugin 依赖
+        classpath 'com.sensorsdata.analytics.android:android-gradle-plugin2:2.0.6'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0'
+        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.4'
+
+
+
+//        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+//    project.ext {
+//        buildToolsVersion = "${BUILD_TOOLS_VERSION}"
+//        compileSdkVersion = COMPILE_SDK_VERSION.toInteger()
+//        minSdkVersion = MIN_SDK_VERSION.toInteger()
+//        targetSdkVersion = TARGET_SDK_VERSION.toInteger()
+//        supportVersion = ANDROID_SUPPORT_VERSION
+//        appVersionCode = APP_VERSION_CODE.toInteger()
+//        appVersionName = "${APP_VERSION_NAME}"
+//    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://maven.google.com" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/zouyuhan/maven' }
+        maven { url 'http://4thline.org/m2' }
+
+//        flatDir {
+//            dirs project(':core').file('libs')
+//            dirs project(':router').file('libs')
+//            dirs project(':loading').file('libs')
+//            dirs project(':baseui').file('libs')
+//            dirs project(':refreshlayout').file('libs')
+//            dirs project(':ijkplayer').file('libs')
+//            dirs project(':ijkview').file('libs')
+//            dirs project(':netbuslib').file('netbuslib')
+//            dirs project(':skeleton').file('skeleton')
+//            dirs project(':permissionlib').file('permissionlib')
+//
+//            /*业务*/
+//            dirs project(':course-playmedia').file('course-playmedia')
+//            dirs project(':login').file('login')
+//            dirs project(':control-device').file('control-device')
+//            dirs project(':teach-manager').file('teach-manager')
+//            dirs project(':attendance').file('attendance')
+//        }
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

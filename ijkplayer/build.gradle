@@ -1,0 +1,5 @@
+configurations.maybeCreate("default")
+apply from: 'nexus_maven_push.gradle'
+
+
+artifacts.add("default", file('ijkplayer.aar'))
