@@ -38,18 +38,15 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-//    api project(":ijkplayer")
-    implementation rootProject.ext.dependencies["annotations"]
-    implementation(rootProject.ext.dependencies["lifecycle"])
-    implementation(rootProject.ext.dependencies["support-v4"])
+
+    compileOnly rootProject.ext.dependencies["annotations"]
+    compileOnly(rootProject.ext.dependencies["lifecycle"])
+    compileOnly(rootProject.ext.dependencies["support-v4"])
 
 
-    dependencies { compile(name:'ijkplayer', ext:'aar')}
+    implementation (name:'ijkplayer', ext:'aar')
 
 
 
 }
 
-repositories {
-    google()
-}
