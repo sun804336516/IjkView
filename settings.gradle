@@ -1,2 +1,2 @@
-include ':app',  ':ijkview'
+include ':app', ':ijkview', ':ijkplayer'
 rootProject.name='IjkView'
