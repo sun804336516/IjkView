@@ -43,7 +43,7 @@ dependencies {
     compileOnly(rootProject.ext.dependencies["lifecycle"])
     compileOnly(rootProject.ext.dependencies["support-v4"])
 
-    api project(':ijkplayer')
+    implementation project(':ijkplayer')
 
 
 
