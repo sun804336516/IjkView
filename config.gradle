@@ -134,13 +134,6 @@ ext {
             "ConsecutiveScroller"     :'com.github.donkingliang:ConsecutiveScroller:2.1.0',
             "VLayout"                 :'com.alibaba.android:vlayout:1.2.39',
 
-            //本地maven仓库
-            "baseui"                  :'com.sxw.baseui:lib:1.0.0@aar',
-            "smart_core"              :'com.sxw.smart_core:lib:1.0.0@aar',
-            "smart_toast"             :'com.sxw.smart_toast:lib:1.0.0@aar',
-            "ijklayer"                :'com.sxw.ijklayer:lib:1.0.0',
-            "ijkview"                 :'com.sxw.ijkview:lib:1.0.0@aar',
-            "core"                    :'com.sxw.core:lib:1.0.0@aar',
 
     ]
 }
